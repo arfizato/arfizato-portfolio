@@ -41,7 +41,7 @@
       &:hover{
         span{
           img{
-            opacity: .75;
+            /* opacity: .4; */
           }
         }
         cursor: pointer;
@@ -52,7 +52,7 @@
     h1{
       margin:  0;
       font-size: 10rem;
-      color:rgba(0, 0, 0, 0.734);
+      color:rgba(255, 255, 255, 0.438);
       z-index: 5;
       animation: TextBePopping 3s linear both;
       padding: 1em;
@@ -72,6 +72,7 @@
           position: absolute;
           opacity: 0;
           transition: all 1s;
+          filter: invert(1);
         }
       }
     }
