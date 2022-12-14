@@ -8,7 +8,7 @@
   <a href="https://github.com/arfizato">
     <h1 id="sayMyName">
       IBRAHIM <br>
-      D<span>O <img src="/triangle.png" alt=" "> </span>GHRI
+      DOGHRI
     </h1>
   </a>
   <p class="NB">This website is still being designed. Want to take a look at my GitHub Instead?</p>
@@ -35,9 +35,18 @@
       
       transition: all .3s;
       opacity: 0;
+      
+      &::selection{
+          /* color: #000000bd; */
+          background-color: transparent;
+        }
     }
     a{
       z-index: 5;
+      &::selection{
+        color: #000000bd;
+        background-color: transparent;
+      }
       &:hover{
         span{
           img{
@@ -49,16 +58,19 @@
           opacity: 1;
         }
     }
-    h1{
-      margin:  0;
-      font-size: 10rem;
-      color:#ffffffbd;
-      z-index: 5;
-      animation: TextBePopping 3s linear both;
-      padding: 1em;
-      
+      h1{
+        margin:  0;
+        font-size: 10rem;
+        color:#ffffffbd;
+        z-index: 5;
+        animation: TextBePopping 3s linear both;
+        padding: .3em .4em;
+        &::selection, br::selection{
+          color: #000000bd;
+          background-color: transparent;
+        }
       }
-      span{
+      /* span{
         position: relative;
         margin: 0 .2rem;
         transition: all 1s;
@@ -74,7 +86,7 @@
           transition: all 1s;
           filter: invert(1);
         }
-      }
+      } */
     }
     img{
       position: absolute;
@@ -82,6 +94,8 @@
       opacity: 20%;
       max-height: 100vh;
       z-index: 2;
+      user-select: none;
+      pointer-events: none;
       &.fog1{
         animation: smokeBeVibrate 17s infinite normal both;
         padding-left: 200px;
