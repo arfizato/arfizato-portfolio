@@ -52,7 +52,7 @@
     h1{
       margin:  0;
       font-size: 10rem;
-      color:rgba(255, 255, 255, 0.438);
+      color:#ffffffbd;
       z-index: 5;
       animation: TextBePopping 3s linear both;
       padding: 1em;
