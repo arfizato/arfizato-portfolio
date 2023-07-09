@@ -8,14 +8,14 @@
     import Work from './work/work.svelte';
     import { pageIndex } from '@routes/stores.ts';
     /* --------------------------------- plugins -------------------------------- */
-	import Reveal from 'reveal.js';
-	import Markdown from 'reveal.js/plugin/markdown/markdown';
-	import Highlight from 'reveal.js/plugin/highlight/highlight';
+	import Reveal from '$lib/reveal.js';
+	import Markdown from '$lib/reveal.js/plugin/markdown/markdown';
+	import Highlight from '$lib/reveal.js/plugin/highlight/highlight';
 	// import Notes from 'reveal.js/plugin/notes/notes';
-	import Animate from 'reveal.js/plugin/animate/animate.esm.js';
-	import Simplemenu from 'reveal.js/plugin/simplemenu/plugin/simplemenu/simplemenu';
+	import Animate from '$lib/reveal.js/plugin/animate/animate.esm.js';
+	import Simplemenu from '$lib/reveal.js/plugin/simplemenu/plugin/simplemenu/simplemenu';
 	// import 'reveal.js/plugin/simplemenu/plugin/simplemenu/simplemenu.css';
-	import Verticator from 'reveal.js/plugin/verticator/plugin/verticator/verticator';
+	import Verticator from '$lib/reveal.js/plugin/verticator/plugin/verticator/verticator';
 
 /* ------------------------------- stylesheets ------------------------------ */
     import 'animate.css';
