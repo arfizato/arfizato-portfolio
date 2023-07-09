@@ -8,7 +8,7 @@
     import Work from './work/work.svelte';
     import { pageIndex } from '@routes/stores.ts';
     /* --------------------------------- plugins -------------------------------- */
-	import Reveal from '$lib/reveal.js';
+	import Reveal from 'reveal.js'; 
 	import Markdown from '$lib/reveal.js/plugin/markdown/markdown';
 	import Highlight from '$lib/reveal.js/plugin/highlight/highlight';
 	// import Notes from 'reveal.js/plugin/notes/notes';
