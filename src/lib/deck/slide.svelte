@@ -3,8 +3,7 @@
 /* ------------------------------- Components ------------------------------- */
 	import { onMount } from 'svelte';
     import About from './about/about.svelte';
-    import Home from './home/home.svelte';
-    import Main from './home/main.svelte';
+    import Main from './home/home.svelte';
     import Projects from './projects/projects.svelte';
     import Work from './work/work.svelte';
     import { pageIndex } from '@routes/stores.ts';
