@@ -9,20 +9,20 @@
     import { pageIndex } from '@routes/stores.ts';
     /* --------------------------------- plugins -------------------------------- */
 	import Reveal from 'reveal.js'; 
-	import Markdown from '$lib/reveal.js/plugin/markdown/markdown';
-	import Highlight from '$lib/reveal.js/plugin/highlight/highlight';
+	import Animate from '../plugins/animate/animate.esm.js';
+	import Verticator from '../plugins/verticator/plugin/verticator/verticator.esm.js';
+	// import Markdown from 'reveal.js/plugin/markdown/markdown';
+	// import Highlight from 'reveal.js/plugin/highlight/highlight';
 	// import Notes from 'reveal.js/plugin/notes/notes';
-	import Animate from '$lib/reveal.js/plugin/animate/animate.esm.js';
-	import Simplemenu from '$lib/reveal.js/plugin/simplemenu/plugin/simplemenu/simplemenu';
+	// import Simplemenu from 'reveal.js/plugin/simplemenu/plugin/simplemenu/simplemenu';
 	// import 'reveal.js/plugin/simplemenu/plugin/simplemenu/simplemenu.css';
-	import Verticator from '$lib/reveal.js/plugin/verticator/plugin/verticator/verticator';
 
 /* ------------------------------- stylesheets ------------------------------ */
     import 'animate.css';
     import 'reveal.js/dist/reveal.css';
     import 'reveal.js/dist/theme/black.css';
     import 'reveal.js/plugin/highlight/monokai.css';
-    import 'reveal.js/plugin/verticator/plugin/verticator/verticator.css';
+    import verticatorCssPath from '../plugins/verticator/plugin/verticator/verticator.css?url';
 
 /* -------------------------------- functions ------------------------------- */
 
@@ -40,7 +40,7 @@
 		});
 
 		deck.initialize({
-			plugins: [   Animate, Verticator, Simplemenu],// Notes, Highlight, Markdown,
+			plugins: [   Animate, Verticator],// Simplemenu],// Notes, Highlight, Markdown,
 			animated: {
 				H1: { animated: 'slideInDown' },
 				IMG: { animated: 'backInDown', repeat: 'repeat-2', speed: 'slower' },
@@ -48,12 +48,12 @@
 				UL: { animated: 'jello', repeat: 'infinite', speed: 'slower' }
 			},
 			verticator: {
-				csspath: 'reveal.js/plugin/verticator/plugin/verticator/verticator.css',
+				csspath: verticatorCssPath,
                 clickable: false,
 			},
-			simplemenu: {
-				csspath: false
-			}
+			// simplemenu: {
+			// 	csspath: false
+			// }
 		});
         deck.on( 'slidechanged', event => {
             // event.previousSlide, event.currentSlide, event.indexh, event.indexv
