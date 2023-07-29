@@ -1,6 +1,6 @@
 # todo
 
-- cat sound on theme hover
+- cat sound on theme hover over cat
 
 
 # create-svelte
