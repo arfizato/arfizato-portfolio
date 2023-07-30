@@ -2,24 +2,83 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+/* @import url('@fontsource/vt323'); */
 
-@font-face {
-    font-family: 'upheavtt';
-    src: url("./lib/assets/fonts/upheavtt.ttf") format("ttf");
-}
-.upFont{
-    font-family: 'upheavtt', 'Press Start 2P', sans-serif;
-}
-.pixelFont{
-    font-family: 'Press Start 2P', cursive;
-}
-.exoFont{
-    font-family: 'Exo 2', sans-serif;
-}
+.pixelFont{ font-family: 'Press Start 2P', cursive !important; }
+.exoFont{ font-family: 'Exo 2', sans-serif !important; }
+.shareTechFont{ font-family: 'Share Tech', 'Exo 2', sans-serif !important; }
 
 body{
-
     margin: 0;
     background-color: #000;
     overflow: hidden;
 }
+:rosot{
+    --r-heading-font : 'offbitBold', 'vt323' , 'Press Start 2P', sans-serif;
+    --r-main-font : 'Share Tech', 'Exo 2', sans-serif;
+    --r-background-color: #090909;
+    --r-main-color: #f0f0f0;
+    --r-link-color: #8ED6F8;
+    --r-link-color-dark: #2D99CA;
+    --r-link-color-hover: #2BBCFF;
+
+    --r-main-font-size:1.5rem;
+    --r-heading1-size:4rem;
+    
+    --r-selection-color: #f0f0f0;
+    --r-selection-color: #090909;
+
+    --r-color-black:"#"
+}
+
+/* ------------------------------- Upheaval TT ------------------------------ */
+@font-face {
+    font-family: 'Upheaval TT (BRK)';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Upheaval TT (BRK)'), url('https://fonts.cdnfonts.com/s/7828/upheavtt.woff') format('woff');
+}
+.upFont{ font-family: 'Upheaval TT (BRK)', 'sPress Start 2P', sans-serif !important; }
+
+/* --------------------------------- offbit --------------------------------- */
+
+@font-face {
+    font-family: 'OffBit Dot';
+    font-style: normal;
+    font-weight: 400;
+    src: local('OffBit Trial'), url('https://fonts.cdnfonts.com/s/88083/OffBitTrial-Dot.woff') format('woff');
+}
+.offbitDotFont{ font-family: 'OffBit Dot', 'vt323' , 'sPress Start 2P', sans-serif !important; }
+@font-face {
+    font-family: 'OffBit Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('OffBit Trial'), url('https://fonts.cdnfonts.com/s/88083/OffBitTrial-Bold.woff') format('woff');
+} 
+.offbitBoldFont{ font-family: 'offbitBold', 'vt323' , 'sPress Start 2P', sans-serif !important; }
+/* 
+@font-face {
+    font-family: 'OffBit';
+    font-style: normal;
+    font-weight: 400;
+    src: local('OffBit Trial'), url('https://fonts.cdnfonts.com/s/88083/OffBitTrial-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'OffBit 101';
+    font-style: normal;
+    font-weight: 400;
+    src: local('OffBit Trial'), url('https://fonts.cdnfonts.com/s/88083/OffBitTrial-101.woff') format('woff');
+}
+@font-face {
+    font-family: 'OffBit 101Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('OffBit Trial'), url('https://fonts.cdnfonts.com/s/88083/OffBitTrial-101Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'OffBit DotBold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('OffBit Trial'), url('https://fonts.cdnfonts.com/s/88083/OffBitTrial-DotBold.woff') format('woff');
+} */
