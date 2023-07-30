@@ -11,7 +11,10 @@
             <p>{data.description}</p>
         </div> 
         {#if data.imgpath!== ""}
-            <img src={imagepath} alt={data.title} class="jobImg">
+            {#await import(imagepath) then image}
+                <img src={image.default} alt={data.title} class="jobImg">
+                
+            {/await}
         {/if}
     </div>
 </section>
