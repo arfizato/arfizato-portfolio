@@ -20,7 +20,8 @@
 /* ------------------------------- stylesheets ------------------------------ */
     import 'animate.css';
     import 'reveal.js/dist/reveal.css';
-    import 'reveal.js/dist/theme/black.css';
+    import './arfizato.css';
+    // import 'reveal.js/dist/theme/black.css';
     import 'reveal.js/plugin/highlight/monokai.css';
     import verticatorCssPath from '../plugins/verticator/plugin/verticator/verticator.css?url';
 
@@ -45,7 +46,7 @@
 				H1: { animated: 'slideInDown' },
 				IMG: { animated: 'backInDown', repeat: 'repeat-2', speed: 'slower' },
 				P: { animated: 'bounceInRight', speed: 'fast' },
-				UL: { animated: 'jello', repeat: 'infinite', speed: 'slower' }
+				IMG: { animated: 'jello', repeat: 'infinite', speed: 'slower' }
 			},
 			verticator: {
 				csspath: verticatorCssPath,
@@ -65,7 +66,6 @@
 
 <div class="reveal">
 	<div class="slides">
-		<!-- <section id="home">slide 1</section> -->
         <Main />
         <About />
         <Work />
