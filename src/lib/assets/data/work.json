@@ -1,0 +1,34 @@
+{
+    "items":[
+        {
+            "title":"Full-Stack Web Developer",
+            "employer":"Bakchich",
+            "description":"Working full-time as a full-stack web developer at Bakchich, a tunisian industry leading crowdfunding solution supporting content creators.",
+            "imgpath":"bakchich.png"
+        },
+        {
+            "title":"Data Science Intern  ",
+            "employer":"keyrus ",
+            "description":"For my end of study internship, I worked on a Data Science project with the KEYRUS team. The project was about creating a solution for information extraction from images of identification documents and telecommunications fraud detection. ",
+            "imgpath":"keyrus.png"
+        },
+        {
+            "title":"Data Analysis Intern ",
+            "employer":"REDNAKS-FENIX/WILDKARD ",
+            "description":"Started with working on multiple bots scraping public data organizing it into sheets for the commercial team and then moved onto creating a dashboard using Google Analytics data of their E-commerce website. ",
+            "imgpath":"wildkard.png"
+        },
+        {
+            "title":"Frontend / Full-stack Developer ",
+            "employer":"AIESEC Medina LST ",
+            "description":"Learning web development hands-on. Worked on an PWA for internal use and a landing page for AIESEC Medina. ",
+            "imgpath":"aiesec.png"
+        },
+        {
+            "title":"Producer ",
+            "employer":"INTERFERENCE ",
+            "description":"My first experience in light art, and I haven't stopped since. Member of the production team taking care of every technical aspect behind the great artworks displayed as well as inventory management. Working alongside artists from all around the globe where communication is key to turning their vision into reality. ",
+            "imgpath":"interference.png"
+        }
+    ]
+}
