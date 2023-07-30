@@ -43,7 +43,7 @@
 </script>
 
 <svelte:head>
-    <title>tannena</title>
+    <title>Ibrahim DOGHRI's Portfolio</title>
 </svelte:head>
 
 <!-- <div class="animContainer">
