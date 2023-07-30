@@ -1,9 +1,20 @@
 <script>
     import OneProject from "./oneProject.svelte";
+    
+    import {items} from "../../assets/data/projects.json";
 </script>
 
+
 <section id="projects">
-    <!-- Hello Projects! -->
-    <OneProject data={{id:"one", title:"Moycalc", stack:"svelte, supabase", description:"simple website to claculate university average"}} />
-    <OneProject data={{id:"two", title:"Moycalc123", stack:"svelte, supabase, react", description:"simple website to claculate university average"}} />
+    {#each items as item}
+        <OneProject data={{id:"project-"+item.title.replace(" ","-"),...item }} />
+    {/each}       
+
 </section>
+
+<style>
+    #projects{
+        width: 100%;
+        height: 100%;
+    }
+</style>

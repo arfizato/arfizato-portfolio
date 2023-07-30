@@ -1,0 +1,39 @@
+{
+    "items":[
+        {
+            "title":"Symfony DALL•E Text-To-Image WebApp",
+            "stack":"Symfony | Stimulus | TailwindCSS | DALL•E | API | ExpressJs | Supabase | JS ",
+            "description":"We Created a web interface making use of DALL•E Text-To-Image ML model. We used Supabase to hold the database of users and images they generated. We created an API using ExpressJs to send Auth emails to the user when needed. We also Used tailwindCSS for the styling. ",
+            "imgpath":"symfony-dalle.png",
+            "url":"https://github.com/arfizato/Symfony-Dall-E "
+        },
+        {
+            "title":"Sentiment Analysis of Movie Reviews Scraped from IMDB ",
+            "stack":"Python | Beautiful Soup | ML | NLP ",
+            "description":"The Task is to scrape movie data off of IMDB and conduct sentiment analysis on it.\nWe used Beautiful Soup to scrape data into two datasets one containing the general data of every movie and the other one contains every review from a selected set of movies which we then use to perform the sentiment analysis using two models 'Multinomial Naïve Bayes' and 'VADER'",
+            "imgpath":"",
+            "url":"https://github.com/WerghiMedArbi/IMDB_Web_Scraping_and_Sentiment_Analysis "
+        },
+        {
+            "title":"MoyCalc ",
+            "stack":"Sveltekit | TailwindCSS ",
+            "description":"A website for university students to calculate their average in case the administration didn't want to. Made by Ibrahim (Arfizato) Doghri, a Big Data & Data Analysis student in ISAMM. first made using Gatsby.js and then remade using Sveltekit. ",
+            "imgpath":"moycalc.webp",
+            "url":"https://github.com/arfizato/moycalc "
+        },
+        {
+            "title":"Fraud Analysis and Prediction ",
+            "stack":"Python | Jupyter | ML ",
+            "description":"First dive into Data mining Data analysis and Machine learning. we used an immense dataset to visualize, and predict fraudulent bank transactions.",
+            "imgpath":"",
+            "url":"https://github.com/arfizato/fraud.git "
+        },
+        {
+            "title":"Android Quiz Application",
+            "stack":"Java | Android Studio | AdobeXD ",
+            "description":"Worked in a team of two for this university project but ended up learning a lot more than we expected. Created the Interface from Scratch on AdobeXD and implemented it while trying to make the user experience as smooth as possible. ",
+            "imgpath":"",
+            "url":"https://github.com/WerghiMedArbi/ApplicationDS "
+        }
+    ]
+}
