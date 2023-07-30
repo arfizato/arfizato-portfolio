@@ -1,0 +1,22 @@
+{
+    "name":"IBRAHIM (ARFIZATO) DOGHRI",
+    "bio":"A Big Data & Data Analysis undergraduate who is intrigued by technology and arts, passionate about programming and computer science interested in production and poetry. Has a scientific mindset and spirit which ties in perfectly with his career choice.",
+    
+    "socials":[
+        {
+            "img":"socials/github.png",
+            "url":"https://github.com/arfizato",
+            "alt":"github"
+        },
+        {
+            "img":"socials/linkedin.png",
+            "url":"https://www.linkedin.com/in/ibrahimdoghri/",
+            "alt":"linkedin"
+        },
+        {
+            "img":"socials/mail.png",
+            "url":"mailto:ibrahimdoghri.tn@gmail.com?subject = Feedback&body = Message",
+            "alt":"mail"
+        }
+    ]
+}
