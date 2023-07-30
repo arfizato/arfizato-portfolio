@@ -4,11 +4,10 @@
     import "../app.css";    
     import PageTransition from '../lib/components/PageTransition.svelte';
     import { page } from "$app/stores";
-    import { afterNavigate } from '$app/navigation';
-    import { onMount } from 'svelte/internal';
     import { pageIndex } from "./stores";
     // import { type Writable } from "svelte/store";
 
+    const origin = $page.url.origin;
     /* ---------------------------- IMAGES AND ASSETS --------------------------- */
     import logo from "@imgs/logo w.png";
     import themeCat from "@imgs/themeCat.png";
@@ -28,16 +27,16 @@
     <main >
         <div class="navbar"  >
             <div class="logo">
-                <a href="/">
+                <a href={origin+"/#/home"}>
                     <img src={logo} alt="logo">
                 </a>
             </div>
             <div class="navLinks spixelFont upFont" >
 
-                <a class={$pageIndex == 0 ? "current": "wa"} href="#/home">HOME </a> 
-                <a class={$pageIndex == 1 ? "current": "wa"} href="#/about">ABOUT</a> 
-                <a class={$pageIndex == 2 ? "current": "wa"} href="#/work">WORK</a>
-                <a class={$pageIndex == 3 ? "current": "wa"} href="#/projects">PROJECTS</a>
+                <a class={$pageIndex == 0 ? "current": "wa"} href={origin+"#/home"}>HOME </a> 
+                <a class={$pageIndex == 1 ? "current": "wa"} href={origin+"#/about"}>ABOUT</a> 
+                <a class={$pageIndex == 2 ? "current": "wa"} href={origin+"#/work"}>WORK</a>
+                <a class={$pageIndex == 3 ? "current": "wa"} href={origin+"#/projects"}>PROJECTS</a>
             </div>
             <label class="theme" for="dark">
                 <img src={themeCat} alt="themeCat">
@@ -51,7 +50,7 @@
 <style >
     main{
         display: grid;
-        grid-template-columns: 15em auto;
+        grid-template-columns: 15em auto 8px;
     }
     .navbar{
         color:white;
@@ -59,6 +58,7 @@
         width: 15em;
         border: 4px solid #fff;
         border-right: none;
+        background-color: #090909 ;
 
         display: grid;
         grid-template-rows: 150px auto 150px ;
@@ -82,7 +82,8 @@
     .navLinks{
         display: flex;
         flex-direction: column;
-        font-size: x-large;
+        font-size:xx-large;
+        
     }
     .navLinks a{        
         color: #fff;
