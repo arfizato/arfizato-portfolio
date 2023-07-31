@@ -2,7 +2,7 @@
     import { page } from "$app/stores";
     export let data: any;
     // const imagepath = `${$page.url.origin}/api?file=work/${data.imgpath}`;
-    const imagepath = `${$page.url.origin}/bucket/work/${data.imgpath}`;
+    const imagepath = `${$page.url.origin}/work/${data.imgpath}`;
 </script>
 <section id={data.id}>
     <div class="jobContainer">

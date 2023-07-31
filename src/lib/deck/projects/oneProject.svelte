@@ -5,7 +5,7 @@
 
     export let data: any;
     // const imagepath = `${$page.url.origin}/api?file=projects/${data.imgpath}`;
-    const imagepath = `${$page.url.origin}/bucket/projects/${data.imgpath}`;
+    const imagepath = `${$page.url.origin}/projects/${data.imgpath}`;
 </script>
 <section id={data.id}>
     <div class="jobContainer">
