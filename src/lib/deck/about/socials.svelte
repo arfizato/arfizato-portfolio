@@ -9,7 +9,7 @@
 <div class="socialsContainer">
     {#each data as social}
         <a href={social.url} target="_blank" rel="noreferrer" >
-            <img src={`${$page.url.origin}/api?file=${social.img}`}  alt={social.alt}>
+            <img src={`${$page.url.origin}/${social.img}`}  alt={social.alt}>
         </a>
     {/each}
 </div>

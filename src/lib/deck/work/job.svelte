@@ -1,7 +1,8 @@
 <script lang="ts">
     import { page } from "$app/stores";
     export let data: any;
-    const imagepath = `${$page.url.origin}/api?file=work/${data.imgpath}`;
+    // const imagepath = `${$page.url.origin}/api?file=work/${data.imgpath}`;
+    const imagepath = `${$page.url.origin}/work/${data.imgpath}`;
 </script>
 <section id={data.id}>
     <div class="jobContainer">
@@ -26,10 +27,9 @@
     gap: 20px;
     /* margin: 0 0 5rem 0; */
 }
-.textContainer {
-    /* width: 50%; */
-}
-
+/* .textContainer {
+    width: 50%;
+} */
 .employer{
     font-size: 1em;
     letter-spacing: 2px;
