@@ -4,7 +4,8 @@
 
 
     export let data: any;
-    const imagepath = `${$page.url.origin}/api?file=projects/${data.imgpath}`;
+    // const imagepath = `${$page.url.origin}/api?file=projects/${data.imgpath}`;
+    const imagepath = `${$page.url.origin}/bucket/projects/${data.imgpath}`;
 </script>
 <section id={data.id}>
     <div class="jobContainer">
@@ -34,9 +35,9 @@
     gap: 20px;
     /* margin: 0 0 5rem 0; */
 }
-.textContainer {
-    /* width: 50%; */
-}
+/* .textContainer {
+    width: 50%;
+} */
 .titleContainer{
     display: grid;
     grid-template-columns: 1fr 25px;
