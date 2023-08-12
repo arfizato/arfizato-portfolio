@@ -12,6 +12,16 @@
     import logo from "@imgs/logo w.png";
     import themeCat from "@imgs/themeCat.png";
 
+    import purr  from "$lib/assets/sounds/purr.wav"
+
+    import meow  from "$lib/assets/sounds/meow.wav"
+    import meow1 from "$lib/assets/sounds/meow1.wav"
+    import meow2 from "$lib/assets/sounds/meow2.wav"
+    import meow3 from "$lib/assets/sounds/meow3.wav"
+    import meow4 from "$lib/assets/sounds/meow4.wav"
+    import meow5 from "$lib/assets/sounds/meow5.wav"
+
+    const meows = [meow, meow1, meow2, meow3, meow4, meow5]
 /* --------------------------------- EXPORTS -------------------------------- */
     /** @type {import('./$types').LayoutData} */
     export let data: {pathname:string};
@@ -40,7 +50,12 @@
             </div>
             <label class="theme" for="dark">
                 <img src={themeCat} alt="themeCat">
-                <input type="checkbox" name="dark" id="dark">
+                <input type="checkbox" name="dark" id="dark" 
+                    on:change={()=>{                    
+                        const audio = new Audio(meows[Math.floor(Math.random() * meows.length)]);
+                        audio.play();
+                    }}
+                >
             </label>
         </div>
         <slot />
@@ -102,6 +117,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        cursor: pointer;
     }
     .theme img{
         width: 80px;
