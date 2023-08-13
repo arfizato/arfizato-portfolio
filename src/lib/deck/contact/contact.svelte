@@ -6,7 +6,7 @@
 
 <section id="contact">
     <h1>CONTACT ME</h1>
-    <form name="hit-me-up" netlify>
+    <form name="hit-me-up" netlify data-netlify="true" method="post" on:submit={()=>{console.log("submitted")}}>
 
         <label for="text">
             <input type="text" name="name" id="name" placeholder="Name" class="formInp">
@@ -55,5 +55,15 @@
     button:hover{
         background-color: var(--r-background-color);
         color: var(--r-main-color);
+    }
+	@media only screen and (max-width: 500px) {
+        .formInp{
+            width: 100dvw;
+            font-size: 1.1em;
+        }
+        button{
+            width: 100dvw;
+            font-size: 1.1em;
+        }
     }
 </style>
