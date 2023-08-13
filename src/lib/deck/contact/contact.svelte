@@ -6,7 +6,9 @@
 
 <section id="contact">
     <h1>CONTACT ME</h1>
-    <form name="hit-me-up" netlify data-netlify="true" >
+    <form form-name="hit-me-up" netlify data-netlify="true" >
+        <input type="hidden" name="form-name" value="hit-me-up">
+
         <label for="text">
             <input type="text" name="name" id="name" placeholder="Name" class="formInp">
         </label>
