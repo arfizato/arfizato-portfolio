@@ -13,7 +13,9 @@
             <div class="titleContainer">
                 <h1>{data.title}</h1>
                 {#if data.url && data.url !== ""}
-                    <a class="projectLink" href={data.url} target="_blank" rel="noreferrer"><img src={externalURL} alt="externalurl"></a>
+                    <a class="projectLink" href={data.url} target="_blank" rel="noreferrer">
+                        <img src={externalURL} alt="externalurl">
+                    </a>
                 {/if}
             </div>
             <h6 class="offbitDotFont stack ">{data.stack}</h6>
@@ -33,11 +35,13 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
-        /* margin: 0 0 5rem 0; */
     }
-    /* .textContainer {
-        width: 50%;
-    } */
+    .textContainer > p{
+        
+        text-align: justify;
+        -moz-text-align-last: center;
+        text-align-last: center;
+    }
     .titleContainer{
         display: grid;
         grid-template-columns: 1fr 25px;
@@ -46,20 +50,17 @@
         align-items: start;
         gap: 10px;
     }
-    .textContainer > p{
-        
-        text-align: justify;
-        -moz-text-align-last: center;
-        text-align-last: center;
-    }
     .projectLink{
         transition: all 0.2s;
+        scale: 1;
         animation: attention 3s infinite both; 
     }
     .projectLink:hover{
-        transform: scale(1.3);
+        /* transform: scale(1.3); */
+        scale: 1.3;
+        animation: none;
     }
-    .titleContainer img{
+    .projectLink img{
         margin: 0 !important;
         width: 20px !important;
     }
@@ -113,8 +114,21 @@
     }
     @media only screen and (max-width: 500px) {
         .jobContainer {
-            width: calc(100vmax - 3vmin -  42px);
+            width: calc(100vmax - 20vmin -  42px);
             flex-direction: column-reverse;
+        }
+        .titleContainer{
+            grid-template-columns: 1fr 40px;
+
+        }
+        .projectLink{
+            width: 40px !important;
+        }
+        .projectLink img{
+            width: 100% !important;
+        }
+        .stack{
+            font-size: .7em;
         }
     }
 </style>

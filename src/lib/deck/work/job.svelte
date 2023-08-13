@@ -62,7 +62,7 @@
     @media only screen and (max-width: 500px) {
         
         .jobContainer {
-            width: calc(100vmax - 3vmin -  42px);
+            width: calc(100vmax - 20vmin -  42px);
             flex-direction: column-reverse;
         }
     }
