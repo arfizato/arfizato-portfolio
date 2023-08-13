@@ -6,7 +6,7 @@
 
 <section id="contact">
     <h1>CONTACT ME</h1>
-    <form name="hit-me-up" netlify data-netlify="true" method="post" on:submit|preventDefault={()=>{console.log("submitted")}}>
+    <form name="hit-me-up" netlify data-netlify="true" on:submit|preventDefault={()=>{console.log("submitted")}}>
 
         <label for="text">
             <input type="text" name="name" id="name" placeholder="Name" class="formInp">
