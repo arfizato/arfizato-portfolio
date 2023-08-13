@@ -5,7 +5,6 @@
     import PageTransition from '../lib/components/PageTransition.svelte';
     import { page } from "$app/stores";
     import { pageIndex } from "./stores";
-    // import { type Writable } from "svelte/store";
 
     const origin = $page.url.origin;
     /* ---------------------------- IMAGES AND ASSETS --------------------------- */
@@ -26,11 +25,9 @@
     /** @type {import('./$types').LayoutData} */
     export let data: {pathname:string};
 /* -------------------------------- FUNCTIONS ------------------------------- */
-    $: pageindex = Number(pageIndex);
+    let audio = new Audio(purr);
 
-/* ---------------------------- LIFECYCLE METHODS --------------------------- */    
-
-    
+/* ---------------------------- LIFECYCLE METHODS --------------------------- */  
 </script>
 
 <PageTransition pathname={data.pathname}>
@@ -48,12 +45,24 @@
                 <a class={$pageIndex == 2 ? "current": "wa"} href={origin+"#/work"}>WORK</a>
                 <a class={$pageIndex == 3 ? "current": "wa"} href={origin+"#/projects"}>PROJECTS</a>
             </div>
-            <label class="theme" for="dark">
+            <label class="theme" for="dark" 
+                on:mouseenter|stopImmediatePropagation ={()=>{
+                    if (audio.paused) {
+                        audio = new Audio(purr);
+                        audio.play();
+                        console.log("purr")
+                    }
+                }}
+            >            
                 <img src={themeCat} alt="themeCat">
                 <input type="checkbox" name="dark" id="dark" 
-                    on:change={()=>{                    
-                        const audio = new Audio(meows[Math.floor(Math.random() * meows.length)]);
-                        audio.play();
+                    on:change={()=>{   
+                        if((!audio.paused && audio.src.includes("purr") )|| audio.paused){                            
+                            audio.pause();
+                            audio = new Audio(meows[Math.floor(Math.random() * meows.length)]);
+                            audio.play();
+                            console.log("meow")
+                        }
                     }}
                 >
             </label>
