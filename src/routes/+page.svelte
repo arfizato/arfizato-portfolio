@@ -72,7 +72,7 @@
 
 
 <style>
-    .animContainer{
+    /* .animContainer{
         position: relative; 
         display: flex;
         justify-content: center;
@@ -80,8 +80,7 @@
     .animC{
         border: 4px solid #fff;
         height: calc(100vh - 8px);
-        /* width: auto; */
-        width: calc(100vw - 15em - 10px);
+        width: calc(100vw - 20vw - 10px);
         position: absolute;
     }
     .arrowContainer{
@@ -92,4 +91,11 @@
         90%{opacity: 0;}
         100%{opacity: 100;}
     }
+    @media only screen and (max-width: 500px) {
+        .animC{
+            
+            height: calc(100vh - 20vh- 10px);
+            width: calc(100vw - 8px);
+        }
+    } */
 </style>

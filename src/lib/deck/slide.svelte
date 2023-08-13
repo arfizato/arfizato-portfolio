@@ -33,7 +33,7 @@
 		const deck = new Reveal({
 			autoAnimateEasing: 'ease',
 			autoAnimateDuration: 1,
-			hash: true,
+			// hash: true,
 			controls: true,
 			progress: false,
             autoSlide: 5000,
@@ -79,5 +79,11 @@
         border: 4px solid #fff;
         width: 100%;
         height: calc(100vh - 8px);
-}
+	}
+	@media only screen and (max-width: 500px) {
+		.reveal{
+			width: calc(100vw - 8px);
+			height: calc(100vh - 20vh - 8px);
+		}
+	}
 </style>

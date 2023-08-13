@@ -40,10 +40,11 @@
             </div>
             <div class="navLinks spixelFont upFont" >
 
-                <a class={$pageIndex == 0 ? "current": "wa"} href={origin+"#/home"}>HOME </a> 
-                <a class={$pageIndex == 1 ? "current": "wa"} href={origin+"#/about"}>ABOUT</a> 
-                <a class={$pageIndex == 2 ? "current": "wa"} href={origin+"#/work"}>WORK</a>
-                <a class={$pageIndex == 3 ? "current": "wa"} href={origin+"#/projects"}>PROJECTS</a>
+                <a class={$pageIndex == 0 ? "current": "wa"} href={origin+"/#/home"}>HOME </a> 
+                <a class={$pageIndex == 1 ? "current": "wa"} href={origin+"/#/about"}>ABOUT</a> 
+                <a class={$pageIndex == 2 ? "current": "wa"} href={origin+"/#/work"}>WORK</a>
+                <a class={$pageIndex == 3 ? "current": "wa"} href={origin+"/#/projects"}>PROJECTS</a>
+                <a class={$pageIndex == 4 ? "current": "wa"} href={origin+"/#/contact"}>CONTACT ME</a>
             </div>
             <label class="theme" for="dark" 
                 on:mouseenter|stopImmediatePropagation ={()=>{
@@ -74,12 +75,12 @@
 <style >
     main{
         display: grid;
-        grid-template-columns: 15em auto 8px;
+        grid-template-columns: 20vw auto 8px;
     }
     .navbar{
         color:white;
         height: calc(100vh - 8px) ;
-        width: 15em;
+        width: 20vw;
         border: 4px solid #fff;
         border-right: none;
         background-color: #090909 ;
@@ -106,7 +107,7 @@
     .navLinks{
         display: flex;
         flex-direction: column;
-        font-size:xx-large;
+        font-size:max(1em,2.2vw);
         
     }
     .navLinks a{        
@@ -118,8 +119,9 @@
     .navLinks a:hover{
         transform: translateX(.5em);
     }
-    .current{
+    .navLinks .current{
         transform: translateX(.5em);
+        color: var(--r-link-color);
     }
 
     .theme{
@@ -131,11 +133,29 @@
     .theme img{
         width: 80px;
     }
-    .theme:checked ~ img{
+    /* .theme:checked ~ img{
         transform: rotateZ(90deg);
-    }
+    } */
 
     .theme input{
         visibility: hidden;
     }
+    @media only screen and (max-width: 500px) {
+        main{
+            grid-template-columns: 1fr;
+            grid-template-rows: 20vh auto 8px;
+        }
+        .navbar{
+            width: calc(100vw - 8px);
+            border: 4px solid #fff;
+            
+            height: calc(20vh - 4px);
+            grid-template-rows: 1fr;
+            grid-template-columns: 100px 1fr 100px;
+        }
+        .navLinks{
+            transform: rotateZ(90deg) translateX(10vh);
+        }
+    }
+
 </style>
