@@ -71,7 +71,7 @@
         <About />
         <Work />
         <Projects />
-		<Contact />
+		<!-- <Contact /> -->
 	</div>
 </div>
 
