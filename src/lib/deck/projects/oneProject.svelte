@@ -1,6 +1,7 @@
 <script lang="ts">
     import { page } from "$app/stores";
     import externalURL from "@imgs/external-link.png";
+    import { themeStore } from "@routes/stores.ts";
 
 
     export let data: any;
@@ -14,7 +15,7 @@
                 <h1>{data.title}</h1>
                 {#if data.url && data.url !== ""}
                     <a class="projectLink" href={data.url} target="_blank" rel="noreferrer">
-                        <img src={externalURL} alt="externalurl">
+                        <img src={externalURL} alt="externalurl" class={$themeStore}>
                     </a>
                 {/if}
             </div>
@@ -64,7 +65,9 @@
         margin: 0 !important;
         width: 20px !important;
     }
-
+    .projectLink img.light{
+        filter: invert(1);
+    }
     .stack{
         font-size: .5em;
         letter-spacing: 2px;
