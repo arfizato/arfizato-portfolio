@@ -143,13 +143,13 @@
     @media only screen and (max-width: 500px) {
         main{
             grid-template-columns: 1fr;
-            grid-template-rows: 20vh auto 8px;
+            grid-template-rows: 20dvh auto 8px;
         }
         .navbar{
             width: calc(100vw - 8px);
             border: 4px solid #fff;
             
-            height: calc(20vh - 4px);
+            height: calc(20dvh - 4px);
             grid-template-rows: 1fr;
             grid-template-columns: 100px 1fr 100px;
         }

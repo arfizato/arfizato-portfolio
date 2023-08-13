@@ -78,12 +78,12 @@
     .reveal {
         border: 4px solid #fff;
         width: 100%;
-        height: calc(100vh - 8px);
+        height: calc(100dvh - 8px);
 	}
 	@media only screen and (max-width: 500px) {
 		.reveal{
 			width: calc(100vw - 8px);
-			height: calc(100vh - 20vh - 8px);
+			height: calc(100dvh - 20dvh - 8px);
 		}
 	}
 </style>
