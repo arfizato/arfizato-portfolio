@@ -28,6 +28,11 @@
             container: introAnimContainer,
             animationData: intro,
             loop: false,
+            
+        })
+        
+        document.querySelectorAll("path").forEach((path)=>{
+            path.style.fill = "var(--r-main-color)"
         })
 
         setTimeout(()=>{
@@ -48,6 +53,9 @@
 </svelte:head>
 
 <section id="home">
-    <div class="introContainer animC" bind:this={introAnimContainer} />
+    <div class="introContainer animC " bind:this={introAnimContainer} />
 
 </section>
+
+<style>
+</style>

@@ -78,7 +78,7 @@
 
 <style>
     .reveal {
-        border: 4px solid #fff;
+        border: 4px solid var(--r-main-color);
         width: 100%;
         height: calc(100dvh - 8px);
 	}

@@ -4,7 +4,7 @@
     import "../app.css";    
     import PageTransition from '../lib/components/PageTransition.svelte';
     import { page } from "$app/stores";
-    import { pageIndex } from "./stores";
+    import { pageIndex,themeStore } from "./stores";
 
     const origin = $page.url.origin;
     /* ---------------------------- IMAGES AND ASSETS --------------------------- */
@@ -26,6 +26,26 @@
     export let data: {pathname:string};
 /* -------------------------------- FUNCTIONS ------------------------------- */
     let audio = new Audio(purr);
+    const changeTheme = () => {
+        const root = document.documentElement,
+        theme = root.getAttribute("theme");
+        let r = document.querySelector(':root')
+
+        if (theme == "light") {
+            root.setAttribute("theme", "dark");
+            r.style.setProperty('--r-background-color', '#090909');
+            r.style.setProperty('--r-main-color', '#f0f0f0');
+            document.body.classList.remove("lightTheme");
+            themeStore.set("dark");
+        } else {
+            root.setAttribute("theme", "light");
+            r.style.setProperty('--r-main-color', '#090909');
+            r.style.setProperty('--r-background-color', '#f0f0f0');
+            document.body.classList.add("lightTheme");
+            themeStore.set("light");
+
+        }
+    }
 
 /* ---------------------------- LIFECYCLE METHODS --------------------------- */  
 </script>
@@ -62,7 +82,8 @@
                             audio.pause();
                             audio = new Audio(meows[Math.floor(Math.random() * meows.length)]);
                             audio.play();
-                            console.log("meow")
+                            console.log("meow");
+                            changeTheme();
                         }
                     }}
                 >
@@ -78,12 +99,12 @@
         grid-template-columns: 20vw auto 8px;
     }
     .navbar{
-        color:white;
+        color: var(--r-main-color);
         height: calc(100vh - 8px) ;
         width: 20vw;
-        border: 4px solid #fff;
+        border: 4px solid var(--r-main-color);
         border-right: none;
-        background-color: #090909 ;
+        background-color: var(--r-background-color) ;
 
         display: grid;
         grid-template-rows: 150px auto 150px ;
@@ -100,6 +121,9 @@
         width: 64px;
         transition: all .5s ;
     }
+    .lightTheme .logo a img{
+        filter: invert(1);
+    }
     .logo a img:hover{
         scale: 1.1;
     }
@@ -111,7 +135,7 @@
         
     }
     .navLinks a{        
-        color: #fff;
+        color: var(--r-main-color);
         text-decoration: none;
         transition: all .5s;
         padding: .5em .25em;
@@ -147,7 +171,7 @@
         }
         .navbar{
             width: calc(100vw - 8px);
-            border: 4px solid #fff;
+            border: 4px solid var(--r-main-color);
             
             height: calc(20dvh - 4px);
             grid-template-rows: 1fr;
