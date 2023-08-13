@@ -6,6 +6,7 @@
     import Main from './home/home.svelte';
     import Projects from './projects/projects.svelte';
     import Work from './work/work.svelte';
+	import Contact from './contact/contact.svelte';
     import { pageIndex } from '@routes/stores.ts';
     /* --------------------------------- plugins -------------------------------- */
 	import Reveal from 'reveal.js'; 
@@ -70,6 +71,7 @@
         <About />
         <Work />
         <Projects />
+		<Contact />
 	</div>
 </div>
 
