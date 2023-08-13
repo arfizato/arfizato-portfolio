@@ -46,6 +46,12 @@
         align-items: start;
         gap: 10px;
     }
+    .textContainer > p{
+        
+        text-align: justify;
+        -moz-text-align-last: center;
+        text-align-last: center;
+    }
     .projectLink{
         transition: all 0.2s;
         animation: attention 3s infinite both; 

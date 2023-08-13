@@ -30,6 +30,12 @@
     /* .textContainer {
         width: 50%;
     } */
+    .textContainer > p{
+        
+        text-align: justify;
+        -moz-text-align-last: center;
+        text-align-last: center;
+    }
     .employer{
         font-size: 1em;
         letter-spacing: 2px;

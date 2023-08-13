@@ -31,6 +31,11 @@
         gap: 20px;
         /* height: 70vh; */
     }
+    .contentContainer{      
+        text-align: justify;
+        -moz-text-align-last: center;
+        text-align-last: center;
+    }
     img{
         height: 70vh; 
         border: var(--r-main-color) 2px solid;
