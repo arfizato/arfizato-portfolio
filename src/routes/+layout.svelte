@@ -157,7 +157,7 @@
             /* transform: rotateZ(90deg) translateX(10%); */
             writing-mode: vertical-rl;
             justify-content: center;
-            flex-direction: column-reverse;
+            /* flex-direction: column-reverse; */
         }
         .navLinks a:hover, .navLinks .current{
             transform: translateY(.5em);
