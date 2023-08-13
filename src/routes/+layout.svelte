@@ -154,7 +154,12 @@
             grid-template-columns: 100px 1fr 100px;
         }
         .navLinks{
-            transform: rotateZ(90deg) translateX(10vh);
+            /* transform: rotateZ(90deg) translateX(10%); */
+            writing-mode: vertical-rl;
+            justify-content: center;
+        }
+        .navLinks a:hover, .navLinks .current{
+            transform: translateY(.5em);
         }
     }
 
