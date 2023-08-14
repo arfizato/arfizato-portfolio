@@ -17,6 +17,10 @@ Have any Feedback? feel free to let me know by creating an issue or reaching out
 
 - make it so vertical scroll resets when you leave parent slide (work/project)
 
+- add invalid url redirection
+
+- fix venticator in light theme
+
 - add backend??
 
 - make cat sounds theme specific (dark = sleepy & light = loud)
