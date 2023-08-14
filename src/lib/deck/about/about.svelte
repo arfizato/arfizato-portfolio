@@ -6,13 +6,13 @@
 
 
 <section id="about">
-    <div class="aboutSubContainer">
+    <div class="aboutSubContainer ">
         <div class="contentContainer">
-            <h2>{about.name}</h2>
+            <h2  data-animated="fadeInDown">{about.name}</h2>
             <Socials data={about.socials}/>
-            <p>{about.bio}</p>
+            <p data-animated="fadeInUp" >{about.bio}</p>
         </div>
-        <img src={MyImage} alt="of ibrahim serving the audio gods">
+        <img src={MyImage} alt="of ibrahim serving the audio gods" data-animated="fadeInRight">
     </div>
 </section>
 

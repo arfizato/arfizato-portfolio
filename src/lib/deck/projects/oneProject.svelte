@@ -4,6 +4,7 @@
     import { themeStore } from "@routes/stores.ts";
 
 
+
     export let data: any;
     // const imagepath = `${$page.url.origin}/api?file=projects/${data.imgpath}`;
     const imagepath = `${$page.url.origin}/projects/${data.imgpath}`;
@@ -12,18 +13,18 @@
     <div class="jobContainer">
         <div class="textContainer">
             <div class="titleContainer">
-                <h1>{data.title}</h1>
+                <h1 data-animated="fadeInDown">{data.title}</h1>
                 {#if data.url && data.url !== ""}
-                    <a class="projectLink" href={data.url} target="_blank" rel="noreferrer">
+                    <a data-animated="rollIn" class="projectLink" href={data.url} target="_blank" rel="noreferrer">
                         <img src={externalURL} alt="externalurl" class={$themeStore}>
                     </a>
                 {/if}
             </div>
-            <h6 class="offbitDotFont stack ">{data.stack}</h6>
-            <p>{data.description}</p>
+            <h6 data-animated="zoomIn" class="offbitDotFont stack ">{data.stack}</h6>
+            <p data-animated="fadeInUp">{data.description}</p>
         </div> 
         {#if data.imgpath!== ""}
-            <img src={imagepath} alt={data.title} class="jobImg">
+            <img data-animated="fadeIn" src={imagepath} alt={data.title} class="jobImg">
         {/if}
     </div>
 </section>
@@ -54,7 +55,7 @@
     .projectLink{
         transition: all 0.2s;
         scale: 1;
-        animation: attention 3s infinite both; 
+        animation: attention 2s infinite both; 
     }
     .projectLink:hover{
         /* transform: scale(1.3); */

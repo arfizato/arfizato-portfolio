@@ -9,7 +9,7 @@
 
 <div class="socialsContainer">
     {#each data as social}
-        <a href={social.url} target="_blank" rel="noreferrer" >
+        <a href={social.url} target="_blank" rel="noreferrer" data-animated="zoomIn">
             <img src={`${$page.url.origin}/${social.img}`}  alt={social.alt} class={$themeStore}>
         </a>
     {/each}

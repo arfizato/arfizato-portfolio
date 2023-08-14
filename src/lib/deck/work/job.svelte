@@ -7,12 +7,12 @@
 <section id={data.id}>
     <div class="jobContainer">
         <div class="textContainer">
-            <h1>{data.title}</h1>
-            <h6 class="offbitDotFont employer">{data.employer}</h6>
-            <p>{data.description}</p>
+            <h1 data-animated="fadeInDown">{data.title}</h1>
+            <h6 data-animated="zoomIn" class="offbitDotFont employer">{data.employer}</h6>
+            <p data-animated="fadeInUp">{data.description}</p>
         </div> 
         {#if data.imgpath!== ""}
-                <img src={imagepath} alt={data.title} class="jobImg">                
+            <img src={imagepath} alt={data.title} class="jobImg" data-animated="fadeIn">                
         {/if}
     </div>
 </section>
