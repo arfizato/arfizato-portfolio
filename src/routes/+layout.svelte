@@ -153,6 +153,7 @@
         display: flex;
         justify-content: center;
         cursor: pointer;
+        animation: tada 5s infinite 3s;
     }
     .theme img{
         width: 80px;
@@ -163,6 +164,39 @@
 
     .theme input{
         visibility: hidden;
+    }
+    
+@keyframes tada {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    2%,
+    4% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    6%,
+    10%,
+    14%,
+    18% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    8%,
+    12%,
+    16% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    20%,to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
     }
     @media only screen and (max-width: 500px) {
         main{
