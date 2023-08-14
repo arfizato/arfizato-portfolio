@@ -60,11 +60,11 @@
             </div>
             <div class="navLinks spixelFont upFont" >
 
-                <a class={$pageIndex == 0 ? "current": "wa"} href={origin+"/#/home"}>HOME </a> 
-                <a class={$pageIndex == 1 ? "current": "wa"} href={origin+"/#/about"}>ABOUT</a> 
-                <a class={$pageIndex == 2 ? "current": "wa"} href={origin+"/#/work"}>WORK</a>
-                <a class={$pageIndex == 3 ? "current": "wa"} href={origin+"/#/projects"}>PROJECTS</a>
-                <!-- <a class={$pageIndex == 4 ? "current": "wa"} href={origin+"/#/contact"}>CONTACT ME</a> -->
+                <a class={$pageIndex == 1 ? "current": "wa"} href={origin+"/#/home"}>HOME </a> 
+                <a class={$pageIndex == 2 ? "current": "wa"} href={origin+"/#/about"}>ABOUT</a> 
+                <a class={$pageIndex == 3 ? "current": "wa"} href={origin+"/#/work"}>WORK</a>
+                <a class={$pageIndex == 4 ? "current": "wa"} href={origin+"/#/projects"}>PROJECTS</a>
+                <!-- <a class={$pageIndex == 5 ? "current": "wa"} href={origin+"/#/contact"}>CONTACT ME</a> -->
             </div>
             <label class="theme" for="dark" 
                 on:mouseenter|stopImmediatePropagation ={()=>{
