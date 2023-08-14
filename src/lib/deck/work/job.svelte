@@ -4,7 +4,7 @@
     // const imagepath = `${$page.url.origin}/api?file=work/${data.imgpath}`;
     const imagepath = `${$page.url.origin}/work/${data.imgpath}`;
 </script>
-<section id={data.id}>
+<section id={"work__"+data.id }>
     <div class="jobContainer">
         <div class="textContainer">
             <h1 data-animated="fadeInDown">{data.title}</h1>

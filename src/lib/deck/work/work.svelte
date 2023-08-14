@@ -13,7 +13,7 @@
         description:"I worked as a full stack developer in a team of 4 people. We developed a web application for a client using React, Spring Boot and PostgreSQL."
     }} /> -->
     {#each items as item}
-        <Job data={{id:"job-"+item.title.replace(" ","-"), ...item  }} />
+        <Job data={ item } />
     {/each}
 </section>
 

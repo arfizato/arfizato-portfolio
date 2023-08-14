@@ -7,7 +7,7 @@
 
 <section id="projects">
     {#each items as item}
-        <OneProject data={{id:"project-"+item.title.replace(" ","-"),...item }} />
+        <OneProject data={item } />
     {/each}       
 
 </section>

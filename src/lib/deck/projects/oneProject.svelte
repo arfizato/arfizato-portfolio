@@ -9,7 +9,7 @@
     // const imagepath = `${$page.url.origin}/api?file=projects/${data.imgpath}`;
     const imagepath = `${$page.url.origin}/projects/${data.imgpath}`;
 </script>
-<section id={data.id}>
+<section id={"projects__"+data.id}>
     <div class="jobContainer">
         <div class="textContainer">
             <div class="titleContainer">
