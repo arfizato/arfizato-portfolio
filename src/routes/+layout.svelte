@@ -70,6 +70,7 @@
                 on:mouseenter|stopImmediatePropagation ={()=>{
                     if (audio.paused) {
                         audio = new Audio(purr);
+                        audio.volume = 0.3;
                         audio.play();
                         console.log("purr")
                     }
@@ -81,6 +82,7 @@
                         if((!audio.paused && audio.src.includes("purr") )|| audio.paused){                            
                             audio.pause();
                             audio = new Audio(meows[Math.floor(Math.random() * meows.length)]);
+                            audio.volume = 0.1;
                             audio.play();
                             console.log("meow");
                             changeTheme();
