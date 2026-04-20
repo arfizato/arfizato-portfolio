@@ -1,17 +1,24 @@
 {
 	"items": [
 		{
+			"id": "aidalet",
+			"title": "Lead Software Engineer",
+			"employer": "Aidalet",
+			"description": "Leading full-stack and AI engineering at Aidalet. Built a Next.js + PostgreSQL learning platform with performance analytics and learning paths, a Flask/Pinecone RAG service indexing 90K+ vectors to power exam-prep question generation (80%+ expert approval), and a FastAPI + SvelteKit payroll-document sorter powered by Mistral AI and OCR that collapses a multi-hour manual task into a ~2-minute wait.",
+			"imgpath": "aidalet.png"
+		},
+		{
 			"id": "bakchich",
-			"title": "Full-Stack Web Developer",
+			"title": "Founding Full-Stack Developer",
 			"employer": "Bakchich",
-			"description": "Working full-time as a full-stack web developer at Bakchich, a Tunisian industry-leading crowdfunding solution supporting content creators. Working on client-facing features like the stream-alerts service, and implementing workflows using Microsoft Azure resources, and migrating from a monolithic PHP project to a monorepo running Next.js apps.",
+			"description": "Founding engineer at Bakchich, Tunisia's leading crowdfunding platform for content creators (50K+ MAU). Led the payment workflow powering thousands of monthly card and DCB transactions with an 80% load-time improvement, helped migrate the PHP monolith to an Nx monorepo of Next.js apps on Kubernetes/Argo CD, and extended the real-time stream-alerts service with RabbitMQ, Socket.IO, and Redis.",
 			"imgpath": "bakchich.png"
 		},
 		{
 			"id": "keyrus-pfe",
-			"title": "Data Science Intern  ",
-			"employer": "keyrus ",
-			"description": "For my end of study internship, I worked on a Data Science project with the KEYRUS team. The project was about creating a solution for information extraction from images of identification documents and telecommunications fraud detection. Finaly, I created a mobile app that will allow the user to set up peoples' accounts and verify their identities and documents automatically.",
+			"title": "Data Scientist",
+			"employer": "Keyrus",
+			"description": "End-of-studies internship on identity verification and fraud detection. Trained CNNs in TensorFlow to classify Tunisia's four national ID documents, fine-tuned OCR to extract personal information from cursive handwriting, and shipped a Java mobile app with the UX/UI team enabling employees to run KYC checks from a document photo in seconds.",
 			"imgpath": "keyrus.png"
 		},
 		{
@@ -25,7 +32,7 @@
 			"id": "aiesec-lst",
 			"title": "Frontend / Full-stack Developer ",
 			"employer": "AIESEC Medina LST ",
-			"description": "Learning web development hands-on. Worked on an PWA for internal use and a landing page for AIESEC Medina. ",
+			"description": "Participated in Marketing & outreach events raising awareness about the available opportunities and the exciting experiences possible through AIESEC. Developed a Landing page for AIESEC Medina and internal tool to optimize the processes and workflow of the IGX and OGX teams. ",
 			"imgpath": "aiesec.png"
 		},
 		{

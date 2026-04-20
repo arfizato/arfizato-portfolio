@@ -1,6 +1,30 @@
 {
 	"items": [
 		{
+			"id": "whaleworld",
+			"title": "Whaleworld Festival Website",
+			"stack": "Next.js | Tailwind CSS | Vercel",
+			"description": "A Next.js/Tailwind CSS site for the Whaleworld light art festival, built to boost engagement and artist support with a browsable program and artist roster.",
+			"imgpath": "",
+			"url": "https://whaleworld.vercel.app/"
+		},
+		{
+			"id": "atdce",
+			"title": "ATDCE Portfolio Website",
+			"stack": "React | Netlify",
+			"description": "A high-fidelity, responsive React website for ATDCE, balancing organizational transparency with a visually compelling and modern user experience.",
+			"imgpath": "",
+			"url": "https://atdce.netlify.app"
+		},
+		{
+			"id": "Moycalc",
+			"title": "MoyCalc ",
+			"stack": "Sveltekit | TailwindCSS ",
+			"description": "A website for university students to calculate their average in case the administration didn't want to. Made by Ibrahim (Arfizato) Doghri, a Big Data & Data Analysis student in ISAMM. first made using Gatsby.js and then remade using Sveltekit. ",
+			"imgpath": "moycalc.webp",
+			"url": "https://github.com/arfizato/moycalc "
+		},
+		{
 			"id": "symfony-dalle",
 			"title": "Symfony DALL•E Text-To-Image WebApp",
 			"stack": "Symfony | Stimulus | TailwindCSS | DALL•E | API | ExpressJs | Supabase | JS ",
@@ -15,14 +39,6 @@
 			"description": "The Task is to scrape movie data off of IMDB and conduct sentiment analysis on it.\nWe used Beautiful Soup to scrape data into two datasets one containing the general data of every movie and the other one contains every review from a selected set of movies which we then use to perform the sentiment analysis using two models 'Multinomial Naïve Bayes' and 'VADER'",
 			"imgpath": "",
 			"url": "https://github.com/WerghiMedArbi/IMDB_Web_Scraping_and_Sentiment_Analysis "
-		},
-		{
-			"id": "Moycalc",
-			"title": "MoyCalc ",
-			"stack": "Sveltekit | TailwindCSS ",
-			"description": "A website for university students to calculate their average in case the administration didn't want to. Made by Ibrahim (Arfizato) Doghri, a Big Data & Data Analysis student in ISAMM. first made using Gatsby.js and then remade using Sveltekit. ",
-			"imgpath": "moycalc.webp",
-			"url": "https://github.com/arfizato/moycalc "
 		},
 		{
 			"id": "fraud-analysis-data-mining",
