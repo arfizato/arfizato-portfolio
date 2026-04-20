@@ -4,42 +4,78 @@
 			"id": "aidalet",
 			"title": "Lead Software Engineer",
 			"employer": "Aidalet",
-			"description": "Leading full-stack and AI engineering at Aidalet. Built a Next.js + PostgreSQL learning platform with performance analytics and learning paths, a Flask/Pinecone RAG service indexing 90K+ vectors to power exam-prep question generation (80%+ expert approval), and a FastAPI + SvelteKit payroll-document sorter powered by Mistral AI and OCR that collapses a multi-hour manual task into a ~2-minute wait.",
+			"description": [
+				"Built a Next.js + PostgreSQL learning platform with learning paths and performance analytics, enhancing UX over the previous version to support students' exam preparation.",
+				"Engineered a production Flask API for vector indexing, integrating 90K+ data points into Pinecone to power a RAG architecture for exam-prep question generation, hitting 80%+ approval from domain experts.",
+				"Delivered a full-stack payroll-document utility for a French payroll agency, with a FastAPI backend (Mistral AI classification, OCR fallback), a SvelteKit drag-and-drop frontend, and Socket.IO progress streaming that collapses a multi-hour manual sort into a ~2-minute task."
+			],
 			"imgpath": "aidalet.png"
 		},
 		{
 			"id": "bakchich",
 			"title": "Founding Full-Stack Developer",
 			"employer": "Bakchich",
-			"description": "Founding engineer at Bakchich, Tunisia's leading crowdfunding platform for content creators (50K+ MAU). Led the payment workflow powering thousands of monthly card and DCB transactions with an 80% load-time improvement, helped migrate the PHP monolith to an Nx monorepo of Next.js apps on Kubernetes/Argo CD, and extended the real-time stream-alerts service with RabbitMQ, Socket.IO, and Redis.",
+			"description": [
+				"Founding engineer at Bakchich, Tunisia's leading crowdfunding platform for content creators, serving 50K+ monthly active users.",
+				"Led the payment workflow as Lead Engineer & Product Owner, processing thousands of monthly card and DCB transactions with an 80% load-speed improvement.",
+				"Migrated the PHP monolith to an Nx monorepo of 4+ Next.js apps, containerized with Docker and deployed cloud-agnostically via Argo CD on Kubernetes.",
+				"Extended the real-time stream-alerts service with RabbitMQ pub/sub, Socket.IO overlays, and Redis caching for faster, more resilient interactions.",
+				"Standardized the design system, icon set, and internationalization across all Bakchich apps."
+			],
 			"imgpath": "bakchich.png"
 		},
 		{
 			"id": "keyrus-pfe",
 			"title": "Data Scientist",
 			"employer": "Keyrus",
-			"description": "End-of-studies internship on identity verification and fraud detection. Trained CNNs in TensorFlow to classify Tunisia's four national ID documents, fine-tuned OCR to extract personal information from cursive handwriting, and shipped a Java mobile app with the UX/UI team enabling employees to run KYC checks from a document photo in seconds.",
+			"description": [
+				"End-of-studies internship on identity verification and telecom fraud detection.",
+				"Trained CNNs in TensorFlow to classify Tunisia's four national ID documents with high accuracy.",
+				"Fine-tuned OCR models to extract personal information from cursive handwriting (full name, address, etc.).",
+				"Partnered with the UX/UI team to ship a Java mobile app that lets employees run KYC checks from a document photo in seconds, helping with fraud prevention."
+			],
 			"imgpath": "keyrus.png"
 		},
 		{
+			"id": "freelance",
+			"title": "Software Engineer (Freelance)",
+			"employer": "Independent",
+			"description": [
+				"Developed and deployed a high-fidelity, responsive React portfolio site for ATDCE, balancing organizational transparency with a visually compelling modern UX.",
+				"Engineered a GCP data-automation pipeline scraping pricing and sourcing signals for an international drop-shipping business, feeding a real-time alert dashboard for relevant team members.",
+				"Built an ML inventory-optimization model predicting stock-depletion dates and optimal quarterly refill amounts from sales metrics, driving data-driven quarterly planning with clear graphical insights."
+			],
+			"imgpath": ""
+		},
+		{
 			"id": "wildkard",
-			"title": "Data Analysis Intern ",
-			"employer": "REDNAKS-FENIX/WILDKARD ",
-			"description": "Started with working on multiple bots scraping public data organizing it into sheets for the marketing team and then moved onto creating a dashboard using Google Analytics data of their E-commerce website. ",
+			"title": "Data Analysis Intern",
+			"employer": "REDNAKS-FENIX/WILDKARD",
+			"description": [
+				"Built multiple bots scraping public data and organizing it into sheets for the marketing team.",
+				"Created a dashboard on top of Google Analytics data for the company's e-commerce website."
+			],
 			"imgpath": "wildkard.png"
 		},
 		{
 			"id": "aiesec-lst",
-			"title": "Frontend / Full-stack Developer ",
-			"employer": "AIESEC Medina LST ",
-			"description": "Participated in Marketing & outreach events raising awareness about the available opportunities and the exciting experiences possible through AIESEC. Developed a Landing page for AIESEC Medina and internal tool to optimize the processes and workflow of the IGX and OGX teams. ",
+			"title": "Frontend / Full-stack Developer",
+			"employer": "AIESEC Medina LST",
+			"description": [
+				"Participated in marketing and outreach events raising awareness about AIESEC opportunities and exchange experiences.",
+				"Developed a landing page for AIESEC Medina and an internal tool to optimize the workflow of the IGX and OGX teams."
+			],
 			"imgpath": "aiesec.png"
 		},
 		{
 			"id": "interference",
-			"title": "Producer ",
-			"employer": "INTERFERENCE ",
-			"description": "My first experience in light art, and I haven't stopped since. Member of the production team taking care of every technical aspect behind the great artworks displayed as well as inventory management. Working alongside artists from all around the globe where communication is key to turning their vision into reality. ",
+			"title": "Producer",
+			"employer": "INTERFERENCE",
+			"description": [
+				"My first experience in light art, and I haven't stopped since.",
+				"Part of the production team handling every technical aspect behind the displayed artworks, alongside inventory management.",
+				"Worked alongside artists from around the globe, where communication is key to turning their vision into reality."
+			],
 			"imgpath": "interference.png"
 		}
 	]
